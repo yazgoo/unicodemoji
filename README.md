@@ -40,6 +40,8 @@ enter:
 :Unicodemoji
 ```
 
+First launch may take some time depending on your bandwidth (due to json cache creation).
+
 if you want a shortcut:
 
 ```
