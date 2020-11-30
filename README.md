@@ -1,6 +1,6 @@
 # 🐹 unicodemoji 
 
-![screen capture](https://raw.githubusercontent.com/yazgoo/unicodemoji/gif/unicodemoji.gif)
+![screen capture](https://raw.githubusercontent.com/yazgoo/unicodemoji-gif/master/unicodemoji.gif)
 
 ⏩fast unicode emojis in terminal and vim with fzf ⌨ .
 
