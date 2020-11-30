@@ -8,12 +8,7 @@ based on [gitmoji](https://github.com/carloscuesta/gitmoji/) and [emojis.json](h
 
 # 🐯 installing (vimplug)
 
-Install fzf (vimplug)
-
-```
-Plug 'junegunn/fzf', { branch''dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-```
+[Install fzf (vimplug) 💾](https://github.com/junegunn/fzf#as-vim-plugin)
 
 Install the plugin (vimplug)
 
