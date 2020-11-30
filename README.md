@@ -45,6 +45,14 @@ nmap <leader>u :Unicodemoji<CR>
 
 # 🐄 using it (shell 🐚)
 
+With FZF:
+
 ```
 $ unicodemoji
+```
+
+Without FZF (so that you can grep results) 👷 
+
+```
+$ unicodemoji --no-fzf
 ```
