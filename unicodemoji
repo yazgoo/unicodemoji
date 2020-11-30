@@ -8,7 +8,7 @@ list_unicodemoji() {
   [ -e "$emoji_out"  ] || wget -q https://gist.githubusercontent.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json -O "$emoji_out"
   (
   cat "$emoji_out" | jq -r '.emojis[] | .emoji + " " + .name + " " + .category'
-  cat "$gitmoji_out"~/.cache/gitmojis.json | jq -r '.gitmojis[] | .emoji + " " + .description + " " + .name'
+  cat "$gitmoji_out" | jq -r '.gitmojis[] | .emoji + " " + .description + " " + .name'
 )
 }
 
