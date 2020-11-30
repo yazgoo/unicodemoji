@@ -1,0 +1,3 @@
+mkdir -p ~/.local/bin/
+cp unicodemoji ~/.local/bin/
+echo 'make sure that ~/.local/bin is in your PATH'
