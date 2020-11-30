@@ -1,5 +1,7 @@
 # unicodemoji
 
+![screen capture](unicodemoji.gif)
+
 fast unicode emojis in terminal and vim with fzf.
 
 based on [gitmoji](https://github.com/carloscuesta/gitmoji/) and [emojis.json](https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb).
