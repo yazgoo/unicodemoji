@@ -6,10 +6,6 @@
 
 based on [gitmoji](https://github.com/carloscuesta/gitmoji/) and [emojis.json](https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb).
 
-# 🐰 prerequisite
-
-🔐 Make sure that `~/.local/bin` is in your PATH (unicodemoji main script will be installed there).
-
 # 🐯 installing (vimplug)
 
 [Install fzf (vimplug) 💾](https://github.com/junegunn/fzf#as-vim-plugin)
@@ -17,20 +13,18 @@ based on [gitmoji](https://github.com/carloscuesta/gitmoji/) and [emojis.json](h
 Install the plugin (vimplug)
 
 ```
-Plug 'yazgoo/unicodemoji', { 'branch': 'main', 'do': './install' }
+Plug 'yazgoo/unicodemoji', { 'branch': 'main' }
 ```
 
 # 🐖 installing (shell 🐚)
 
-If you have already installed the plugin, you don't need to do that part.
-
-You need fzf installed.
-
-Otherwise run
+If you installed the plugin via vimplug, you can do:
 
 ```
-./install
+ln -s ~/.config/nvim/plugged/unicodemoji/plugin/unicodemoji  ~/.local/bin/
 ```
+
+Otherwise, copy plugin/unicodemoji in your `PATH`
 
 # 🐪 using it (vim)
 
