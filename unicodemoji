@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
 list_unicodemoji() {
-  gitmoji_out="$HOME/.cache/gitmojis.json"
-  emoji_out="$HOME/.cache/emojis.json"
+  unicodemoji_cache="$HOME/.cache/unicodemoji/"
+  gitmoji_out="$unicodemoji_cache/gitmojis.json"
+  emoji_out="$unicodemoji_cache/emojis.json"
+
+  mkdir -p "$unicodemoji_cache"
 
   [ -e "$gitmoji_out"  ] || wget -q https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json -O "$gitmoji_out"
   [ -e "$emoji_out"  ] || wget -q https://gist.githubusercontent.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json -O "$emoji_out"
