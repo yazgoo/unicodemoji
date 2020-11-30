@@ -7,14 +7,14 @@ unicode emojis in terminal and vim with fzf
 Install fzf
 
 ```
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { branch''dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 ```
 
 Install the plugin (vimplug)
 
 ```
-Plug 'yazgoo/unicodemoji' { 'dir': ~/.unicodemoji, 'do': './install' }
+Plug 'yazgoo/unicodemoji', { 'branch': 'main', 'dir': '~/.unicodemoji', 'do': './install' }
 ```
 
 # installing (shell)
@@ -41,7 +41,7 @@ enter:
 if you want a shortcut:
 
 ```
-nmap <leader>u :Unimoji<CR>
+nmap <leader>u :Unicodemoji<CR>
 ```
 
 # using it (shell)
