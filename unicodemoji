@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
 list_unicodemoji() {
-  unicodemoji_cache="$HOME/.cache/unicodemoji/"
+  if [ -z "$XDG_CACHE_DIR" ]
+  then
+    cache_base="$HOME/.cache"
+  else
+    cache_base="$XDG_CACHE_DIR"
+  fi
+
+  unicodemoji_cache="$cache_base/unicodemoji/"
   gitmoji_out="$unicodemoji_cache/gitmojis.json"
   emoji_out="$unicodemoji_cache/emojis.json"
 
