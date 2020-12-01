@@ -13,7 +13,7 @@ based on [gitmoji](https://github.com/carloscuesta/gitmoji/) and [emojis.json](h
 Install the plugin (vimplug)
 
 ```
-Plug 'yazgoo/unicodemoji', { 'branch': 'main' }
+Plug 'yazgoo/unicodemoji'
 ```
 
 # 🐖 installing (shell 🐚)
