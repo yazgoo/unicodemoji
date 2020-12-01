@@ -1,7 +1,10 @@
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
 function! s:unicodemoji(line)
-  exe "normal! i" . strcharpart(a:line, 0, 1) . "\<Esc>"
+  call feedkeys("i")
+  call feedkeys(strcharpart(a:line, 0, 1))
+  call feedkeys(" ")
+  call feedkeys("\<Esc>")
 endfunction
 
 command! -bang -nargs=0 Unicodemoji
