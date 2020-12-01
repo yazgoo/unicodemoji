@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+download_or_update() {
+  ttl=$(( 24 * 60 * 7 ))
+  find "$2" -mmin "-${ttl}" >/dev/null 2>&1 || wget -q "$1" -O "$2"
+}
+
 list_unicodemoji() {
   if [ -z "$XDG_CACHE_DIR" ]
   then
@@ -14,8 +19,8 @@ list_unicodemoji() {
 
   mkdir -p "$unicodemoji_cache"
 
-  [ -e "$gitmoji_out"  ] || wget -q https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json -O "$gitmoji_out"
-  [ -e "$emoji_out"  ] || wget -q https://gist.githubusercontent.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json -O "$emoji_out"
+  download_or_update https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json "$gitmoji_out"
+  download_or_update https://gist.githubusercontent.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json "$emoji_out"
 
   if [ "$1" = "--code" ]
   then
