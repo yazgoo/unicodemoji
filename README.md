@@ -67,3 +67,10 @@ Without FZF (so that you can grep results) 👷
 ```
 $ unicodemoji --no-fzf
 ```
+
+getting the emoji code (e.g. `:hamster:` for 🐹)
+
+```
+$ unicodemoji --code
+```
+
