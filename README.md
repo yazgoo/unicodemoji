@@ -28,7 +28,7 @@ Otherwise, copy plugin/unicodemoji in your `PATH`
 
 # 🐪 using it (vim)
 
-enter:
+to get unicode emoji, enter:
 
 ```
 :Unicodemoji
@@ -40,6 +40,18 @@ if you want a shortcut:
 
 ```
 nmap <leader>u :Unicodemoji<CR>
+```
+
+to get emoji code, enter:
+
+```
+:UnicodemojiCode
+```
+
+if you want a shortcut:
+
+```
+nmap <leader>U :UnicodemojiCode<CR>
 ```
 
 # 🐄 using it (shell 🐚)
