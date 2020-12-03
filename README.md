@@ -8,6 +8,8 @@ based on [gitmoji](https://github.com/carloscuesta/gitmoji/) and [emojis.json](h
 
 # 🐯 installing (vimplug)
 
+Instal [jq](https://stedolan.github.io/jq/) (`apt install jq`, `pacman -Sy jq`, ...)
+
 [Install fzf (vimplug) 💾](https://github.com/junegunn/fzf#as-vim-plugin)
 
 Install the plugin (vimplug)
